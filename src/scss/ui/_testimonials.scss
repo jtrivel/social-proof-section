@@ -1,0 +1,61 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include m.desktop {
+    @include m.grid(6, 2rem);
+  }
+
+  &__container {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    @include m.desktop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: v.$primaryColor;
+    padding: 4rem;
+    border-radius: 1rem;
+    color: v.$grayMagenta;
+    height: 100%;
+    @include m.desktop { 
+      &:nth-child(2) {
+        margin-top: 2rem;
+      }
+      &:nth-child(3) {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__img {
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__verification {
+    display: block;
+    color: v.$softPink;
+    font-weight: 300;
+  }
+}

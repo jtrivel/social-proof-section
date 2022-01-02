@@ -1,0 +1,43 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: v.$white;
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  font-size: 1.5rem;
+  font-family: v.$primaryFont;
+  display: flex;
+  flex-direction: column;
+  @include m.desktop {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-size: 40vw 50vh, 70vw 70vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 40rem;
+  width: 95%;
+  margin-inline: auto;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  @include m.desktop {
+    padding: 5rem 2rem;
+    gap: 8rem;
+    max-width: 130rem;
+  }
+}
