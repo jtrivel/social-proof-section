@@ -88,6 +88,7 @@ body {
   font-family: "Spartan", sans-serif;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 @media (min-width: 1024px) {
   body {
@@ -96,6 +97,7 @@ body {
     background-size: 40vw 50vh, 70vw 70vh;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
   }
 }
 
@@ -270,4 +272,18 @@ body {
   display: block;
   color: #ee68a4;
   font-weight: 300;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin-inline: auto;
+  color: #937b92;
+  font-weight: 500;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ee68a4;
+  font-weight: 500;
 }/*# sourceMappingURL=app.css.map */

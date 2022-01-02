@@ -1,0 +1,17 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin-inline: auto ;
+  color: v.$darkMagenta;
+  font-weight: 500;
+
+  &__link {
+    text-decoration: none;
+    color: v.$softPink;
+    font-weight: 500;
+  }
+}

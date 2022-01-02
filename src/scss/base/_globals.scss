@@ -15,6 +15,7 @@ body {
   font-family: v.$primaryFont;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   @include m.desktop {
     background-image: url(../images/bg-pattern-top-desktop.svg),
       url(../images/bg-pattern-bottom-desktop.svg);
@@ -22,6 +23,7 @@ body {
     background-size: 40vw 50vh, 70vw 70vh;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
   }
 }
 
