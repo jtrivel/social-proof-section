@@ -2,16 +2,21 @@
 @use "../base/mixins" as m;
 
 .footer {
-  text-align: center;
-  font-size: 1.2rem;
-  max-width: 60%;
-  margin-inline: auto ;
-  color: v.$darkMagenta;
-  font-weight: 500;
+  display: none;
 
-  &__link {
-    text-decoration: none;
-    color: v.$softPink;
+  @include m.desktop {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: v.$darkMagenta;
     font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    &__link {
+      text-decoration: none;
+      color: v.$softPink;
+      font-weight: 500;
+    }
   }
 }

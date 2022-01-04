@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
   @include m.desktop {
     background-image: url(../images/bg-pattern-top-desktop.svg),
       url(../images/bg-pattern-bottom-desktop.svg);

@@ -89,6 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
 }
 @media (min-width: 1024px) {
   body {
@@ -275,15 +276,22 @@ body {
 }
 
 .footer {
-  text-align: center;
-  font-size: 1.2rem;
-  max-width: 60%;
-  margin-inline: auto;
-  color: #937b92;
-  font-weight: 500;
+  display: none;
 }
-.footer__link {
-  text-decoration: none;
-  color: #ee68a4;
-  font-weight: 500;
+@media (min-width: 1024px) {
+  .footer {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #937b92;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: #ee68a4;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=app.css.map */
